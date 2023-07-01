@@ -325,7 +325,7 @@ function BCUI.Frames:SetupGroup()
 
 	--Using group frame
 	if (BCUI.Vars.ShowCompanionWhenInGroup and IsUnitGrouped('player')) or (BCUI.Vars.ShowCompanionWhenSolo and (HasActiveCompanion() or GetUnitName('playerpet1')~='')) or (BCUI.InSettingMenu or BUI.inMenu) then
-		if BCUI.Vars.ShowCompanionWhenInGroup or (BCUI.InSettingMenu or BUI.inMenu) then
+		if BCUI.Vars.ShowCompanionWhenInGroup or BCUI.Vars.ShowCompanionWhenSolo or (BCUI.InSettingMenu or BUI.inMenu) then
 			ZO_UnitFramesGroups:SetHidden(true)
 		else
 			ZO_UnitFramesGroups:SetHidden(false)

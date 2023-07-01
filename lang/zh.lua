@@ -6,6 +6,8 @@ ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_1", "召唤/解散 巴�
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_2", "召唤/解散 米莉·艾伦迪斯")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_3", "召唤/解散 伊索贝尔·维罗伊斯")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_4", "召唤/解散 恩贝尔")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_5", "召唤/解散 Sharp-as-Night")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_6", "召唤/解散 Azandar al-Cybiades")
 
 BCUI.Localization.zh={
 	--MENU

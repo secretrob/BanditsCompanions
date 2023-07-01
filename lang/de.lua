@@ -7,6 +7,8 @@ ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_1", "Rufe/Verstecke Bas
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_2", "Rufe/Verstecke Mirri Elendis")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_3", "Rufe/Verstecke Isobel Veloise")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_4", "Rufe/Verstecke Ember")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_5", "Rufe/Verstecke Sharp-as-Night")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_6", "Rufe/Verstecke Azandar al-Cybiades")
 
 BCUI.Localization.de={
 	--MENU

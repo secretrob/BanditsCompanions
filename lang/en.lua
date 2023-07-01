@@ -6,6 +6,8 @@ ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_1", "Summon/Dismiss Bas
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_2", "Fetch/Dismiss Mirri Elendis")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_3", "Summon/Dismiss Isobel Veloise")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_4", "Summon/Dismiss Ember")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_5", "Summon/Dismiss Sharp-as-Night")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_6", "Summon/Dismiss Azandar al-Cybiades")
 
 BCUI.Localization.en={
 	--MENU

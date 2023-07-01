@@ -6,6 +6,8 @@ ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_1", "Appeler/Renvoyer B
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_2", "Appeler/Renvoyer Mirri Elendis")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_3", "Appeler/Renvoyer Isobel Veloise")
 ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_4", "Appeler/Renvoyer Braise")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_5", "Appeler/Renvoyer Sharp-as-Night")
+ZO_CreateStringId("SI_BINDING_NAME_BCUI_SUMMON_COMPANION_6", "Appeler/Renvoyer Azandar al-Cybiades")
 
 BCUI.Localization.fr={
 	--MENU
