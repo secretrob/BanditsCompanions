@@ -521,12 +521,12 @@ function BCUI.Frames.Companion_UI(s)	--UI init
 				BCUI.TargetFrameHidePreview()
 				BCUI.EventShowBUIMenu()				
 				if BUI.Vars.BCUI_CompanionFrame then BUI.Vars["BCUI_CompanionFrame"] = nil end
-				EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED)
+				--EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED)
 				EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_PUSHED)				
 			end
 		end
 
-		EVENT_MANAGER:RegisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED	,OnLayerChange)
+		--EVENT_MANAGER:RegisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED	,OnLayerChange)
 		EVENT_MANAGER:RegisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_PUSHED	,OnLayerChange)
 	else
 		companion:SetMovable(false)
@@ -537,7 +537,7 @@ function BCUI.Frames.Companion_UI(s)	--UI init
 		if companion.line_right then companion.line_right:SetHidden(true) end
 		if companion.line_hor then companion.line_hor:SetHidden(true) end
 		if companion.line_vert then companion.line_vert:SetHidden(true) end
-		EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED)
+		--EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_POPPED)
 		EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_ACTION_LAYER_PUSHED)
 	end
 
