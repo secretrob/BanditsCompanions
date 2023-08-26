@@ -30,7 +30,6 @@ BCUI.Localization.en={
 	PetsHeader = "Pet Options",	
 	MoveFrames = "Move Frames",
 	CompanionsFrameBtn = "Lock Frames",
-	ResummonAfterAssist = "Resummon Companion After Using Assistant",
 	CompanionFontSize = "Companion Font Size",
 	AutoHide = "Auto hide",
 	Companion = "Companion",

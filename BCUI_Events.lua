@@ -2,22 +2,6 @@ local messages={}
 local LastWipe,LastPowerValue=0,0
 local ResultDamage={[ACTION_RESULT_DAMAGE]=true,[ACTION_RESULT_CRITICAL_DAMAGE]=true,[ACTION_RESULT_BLOCKED_DAMAGE]=true,[ACTION_RESULT_DOT_TICK]=true,[ACTION_RESULT_DOT_TICK_CRITICAL]=true,[ACTION_RESULT_DAMAGE_SHIELDED]=true}
 
-local function OnUnitDestroyed(_,unitTag)		
-	if BCUI.Vars.ResummonAfterAssist and BCUI.CompanionInfo.activeId~=0 and string.find(unitTag, "pet") then
-		if not HasActiveCompanion() and GetActiveCollectibleByType(COLLECTIBLE_CATEGORY_TYPE_ASSISTANT)==0 then			
-			for _,comp in pairs(BCUI.CompanionInfo) do
-				if type(comp) ~= "number" then 
-					if comp.id~=nil and comp.id == GetCompanionCollectibleId(BCUI.CompanionInfo.activeId) then
-						BCUI.Binds.SummonCompanion(comp,1000)
-						break
-					end
-				end
-			end
-			EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED)
-		end
-	end
-end
-
 local function OnGroupChanged(_,unitTag)	
 	if BUI.init.Frames and BCUI.Vars.ShowCompanionWhenInGroup then
 		BCUI.Frames.Companion_UI()
@@ -29,14 +13,6 @@ local function OnGroupChanged(_,unitTag)
 	elseif IsUnitGrouped('player') then
 		BCUI.Frames.Companion_UI()
 		BCUI.Frames.GetGroupData()
-	end		
-
-	if unitTag~=nil then
-		if BCUI.Vars.ResummonAfterAssist and GetActiveCollectibleByType(COLLECTIBLE_CATEGORY_TYPE_ASSISTANT)~=0 and string.find(unitTag, "pet") then
-			EVENT_MANAGER:RegisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED, OnUnitDestroyed)
-		else
-			EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED)
-		end
 	end
 end
 

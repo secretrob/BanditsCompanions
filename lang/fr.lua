@@ -30,7 +30,6 @@ BCUI.Localization.fr={
 	PetsHeader = "Options du familier",	
 	MoveFrames = "Déplacer les barres",
 	CompanionsFrameBtn = "Verrouiller les barres",
-	ResummonAfterAssist = "Réappeler le compagnon après un assistant",
 	CompanionFontSize = "Taille de la police du compagnon",
 	AutoHide = "Masquer automatiquement",
 	Companion = "Compagnon",

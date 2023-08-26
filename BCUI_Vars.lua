@@ -19,7 +19,6 @@ BCUI.Defaults = {
   CompanionNameFormat        =1,
   DetachFrameGroup           =false,
   DetachFrameSolo            =false,  
-  ResummonAfterAssist        =true,
   AutoHide                   =false,
   SidebarCompanion           =2,
 }

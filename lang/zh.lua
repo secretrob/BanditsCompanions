@@ -30,7 +30,6 @@ BCUI.Localization.zh={
 	PetsHeader = "宠物选项",
 	MoveFrames = "移动框架",
 	CompanionsFrameBtn = "锁定框架",
-	ResummonAfterAssist = "使用助手后重新召唤伙伴",
 	CompanionFontSize = "伙伴字体大小",
 	AutoHide = "自动隐藏",
 	Companion = "伙伴",

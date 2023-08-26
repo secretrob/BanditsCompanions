@@ -31,7 +31,6 @@ BCUI.Localization.de={
 	PetsHeader = "Begleiteroptionen",	
 	MoveFrames = "Anzeige bewegen",
 	CompanionsFrameBtn = "Anzeige sperren",
-	ResummonAfterAssist = "Rufe Gefährten zurück nach Assistenten",
 	CompanionFontSize = "Schriftgröße",
 	AutoHide = "Automatisches Verstecken",
 	Companion = "Gefährten",
