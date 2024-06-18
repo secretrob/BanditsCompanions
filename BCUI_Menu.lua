@@ -106,7 +106,7 @@ local function Initialize()
     },
     { type    = "slider",
       name    = BCUI.Loc("CompanionWidth"),
-      min     = 200,
+      min     = 100,
       max     = 500,
       step    = 20,
       getFunc = function() return BCUI.Vars.CompanionWidth end,
@@ -122,7 +122,7 @@ local function Initialize()
     },
     { type    = "slider",
       name    = BCUI.Loc("CompanionFontSize"),
-      min     = 12,
+      min     = 8,
       max     = 24,
       step    = 1,
       getFunc =function() return BCUI.Vars.CompanionFontSize end,
@@ -160,7 +160,7 @@ local function Initialize()
     { type = "button",
       name = "Reset",
       func = function()
-        ZO_Dialogs_ShowPlatformDialog("BUI_RESET_CONFIRMATION",
+        ZO_Dialogs_ShowDialog("BUI_RESET_CONFIRMATION",
                                       {
                                         text = "Reset to defaults ?",
                                         func = Reset
