@@ -2,8 +2,8 @@
 --1 disabled
 --2 all
 local index=3
---bastian,mirri,isobel,ember,sharp,azandar
-local companionIds={9245,9353,9912,9911,11113,11114}
+--bastian,mirri,isobel,ember,sharp,azandar,tanlorin,zerith-var
+local companionIds={9245,9353,9912,9911,11113,11114,12172,12173}
 --get ids
 --/script for i=10000,13000 do local name,_,_,_,_,_,_,type=GetCollectibleInfo(i) if type==27 then d(name) d(i) end end
 local companions={}
