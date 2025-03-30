@@ -1,9 +1,9 @@
 ## Title: Bandits |c00FFE8Companions|r
 ## Author: |c32CD32secretrob|r
 ## Description: Addition to Bandits User Interface. Adds companion "group" bar when solo and while in a group.
-## Version: 1.7.11
-## APIVersion: 101044
-## AddOnVersion: 41
+## Version: 1.7.12
+## APIVersion: 101045
+## AddOnVersion: 42
 ## SavedVariables: BanditsCompanions_SavedVars
 ## DependsOn: BanditsUserInterface
 ##
