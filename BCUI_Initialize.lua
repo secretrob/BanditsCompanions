@@ -5,10 +5,11 @@ local index=3
 --bastian,mirri,isobel,ember,sharp,azandar,tanlorin,zerith-var
 local companionIds={9245,9353,9912,9911,11113,11114,12172,12173}
 --get ids
---/script for i=10000,13000 do local name,_,_,_,_,_,_,type=GetCollectibleInfo(i) if type==27 then d(name) d(i) end end
+--/script for i=10000,15000 do local name,_,_,_,_,_,_,type=GetCollectibleInfo(i) if type==27 then d(name) d(i) end end
 local companions={}
 for i,val in pairs(companionIds) do  
   local name,description,icon,_,unlocked,_,isActive,_,hint=GetCollectibleInfo(val)
+  if IsCollectibleBlocked(val) and GetCollectibleBlockReason(val)==COLLECTIBLE_USAGE_BLOCK_REASON_COMPANION_INTRO_QUEST then unlocked=false end
   companions["activeId"]=0
   table.insert(companions,{
     index=index,

@@ -6,7 +6,10 @@ function BCUI.Binds.SummonCompanion(companion,delay)
     
     local collectableCooldownLeft = GetCollectibleCooldownAndDuration(companionCollectible)
 
+    
+
     if not HasActiveCompanion() or BCUI.CompanionInfo.activeId ~= companion.id then d(BCUI.Loc("Summoning")..companion.name) end
+    --d(companionCollectible)
     if IsCollectibleUsable(companionCollectible) == true then
         if IsCollectibleBlocked(companionCollectible) then return end
         zo_callLater(
@@ -28,7 +31,11 @@ function BCUI.Binds.SummonCompanionByIndex(id)
     if id>1 and ownedCompanions~=nil then
         for i in pairs(ownedCompanions) do
             if ownedCompanions[i].index==id then companion=ownedCompanions[i] end
-        end        
+        end
+        if not companion then
+            --d(ownedCompanions)
+            companion=ownedCompanions[math.random(1, #ownedCompanions)]
+        end
 
         BCUI.Binds.SummonCompanion(companion)
     end
