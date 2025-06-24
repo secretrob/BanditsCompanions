@@ -32,6 +32,7 @@ BCUI.Localization.es={
 	CompanionsFrameBtn = "Bloquear marcos",
 	CompanionFontSize = "Tamaño de fuente del compañero",
 	AutoHide = "Ocultar automáticamente",
+	CompanionAutoDismiss = "Compañero de despido automático (prueba)",
 	Companion = "Compañero",
 	SidebarCompanion = "Barra lateral de compañero",
 
@@ -49,4 +50,5 @@ BCUI.Localization.es={
 	EmberName = "Ascuas",
 
 	Summoning = "Invocando compañero ",	
+	Dismissing= "Despidiendo a un compañero ",
 }

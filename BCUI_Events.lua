@@ -1,6 +1,7 @@
 local messages={}
 local LastWipe,LastPowerValue=0,0
 local ResultDamage={[ACTION_RESULT_DAMAGE]=true,[ACTION_RESULT_CRITICAL_DAMAGE]=true,[ACTION_RESULT_BLOCKED_DAMAGE]=true,[ACTION_RESULT_DOT_TICK]=true,[ACTION_RESULT_DOT_TICK_CRITICAL]=true,[ACTION_RESULT_DAMAGE_SHIELDED]=true}
+local CallBackCompanion=false
 
 local function OnGroupChanged(_,unitTag)	
 	if BUI.init.Frames and BCUI.Vars.ShowCompanionWhenInGroup then
@@ -33,10 +34,27 @@ local function OnGroupLeave(_,characterName)
 	end	
 end
 
+local function CompanionAutoDismiss()
+	local PvPzone=IsPlayerInAvAWorld() or IsActiveWorldBattleground()
+	if not PvPzone then
+		if BUI.IsTrialLobby() and HasActiveCompanion() then
+			for i, data in pairs(BCUI.CompanionInfo) do
+				if i~="activeId" and data.id==GetCompanionCollectibleId(GetActiveCompanionDefId()) then BCUI.Binds.DismissCompanion(data, 2500) CallBackCompanion=data return end
+			end
+		elseif CallBackCompanion and not BUI.IsPlayerInTrial() and not HasActiveCompanion() then
+			--d(CallBackCompanion)
+			BCUI.Binds.SummonCompanion(CallBackCompanion, 2500)
+			CallBackCompanion=false			
+		end
+	end
+end
+
 local function OnActivated()	
 	if BUI.init.Frames then
 		if BCUI.Vars.ShowCompanionWhenSolo or BCUI.Vars.ShowCompanionWhenInGroup then BCUI.Frames:SetupGroup() end
 	end	
+	
+	if BCUI.Vars.CompanionAutoDismiss then zo_callLater(function() CompanionAutoDismiss() end,2500) end
 end
 
 local function OnLoad()

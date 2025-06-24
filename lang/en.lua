@@ -32,6 +32,7 @@ BCUI.Localization.en={
 	CompanionsFrameBtn = "Lock Frames",
 	CompanionFontSize = "Companion Font Size",
 	AutoHide = "Auto hide",
+	CompanionAutoDismiss = "Auto Dismiss Companion (Trial)",
 	Companion = "Companion",
 	SidebarCompanion = "Sidebar Companion",
 
@@ -49,4 +50,5 @@ BCUI.Localization.en={
 	EmberName = "Ember",
 
 	Summoning = "Summoning Companion ",	
+	Dismissing= "Dismissing Companion ",
 }

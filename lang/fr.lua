@@ -32,6 +32,7 @@ BCUI.Localization.fr={
 	CompanionsFrameBtn = "Verrouiller les barres",
 	CompanionFontSize = "Taille de la police du compagnon",
 	AutoHide = "Masquer automatiquement",
+	CompanionAutoDismiss = "Compagnon de fermeture automatique (version d'essai)",
 	Companion = "Compagnon",
 	SidebarCompanion = "Compagnon de la barre latérale",
 
@@ -49,4 +50,5 @@ BCUI.Localization.fr={
 	EmberName = "Braise",
 
 	Summoning = "Appel du compagnon ",
+	Dismissing= "Renvoi du compagnon ",
 }

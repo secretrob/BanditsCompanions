@@ -21,6 +21,7 @@ BCUI.Defaults = {
   DetachFrameSolo            =false,  
   AutoHide                   =false,
   SidebarCompanion           =2,
+  CompanionAutoDismiss       =false,
 }
 
 function BCUI.Vars.Initialize()

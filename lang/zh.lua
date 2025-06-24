@@ -32,6 +32,7 @@ BCUI.Localization.zh={
 	CompanionsFrameBtn = "锁定框架",
 	CompanionFontSize = "伙伴字体大小",
 	AutoHide = "自动隐藏",
+	CompanionAutoDismiss = "自动关闭伴侣（试用版）",
 	Companion = "伙伴",
 	SidebarCompanion = "侧边栏伙伴",
 
@@ -49,4 +50,5 @@ BCUI.Localization.zh={
 	EmberName = "恩贝尔",
 
 	Summoning = "召唤伙伴 ",
+	Dismissing= "解雇合伙人 ",
 }

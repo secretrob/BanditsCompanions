@@ -5,20 +5,17 @@ function BCUI.Binds.SummonCompanion(companion,delay)
     local isCollectibleBlocked = IsCollectibleBlocked(companionCollectible)
     
     local collectableCooldownLeft = GetCollectibleCooldownAndDuration(companionCollectible)
-
     
-
     if not HasActiveCompanion() or BCUI.CompanionInfo.activeId ~= companion.id then d(BCUI.Loc("Summoning")..companion.name) end
-    --d(companionCollectible)
+    --d(companionCollectible)        
     if IsCollectibleUsable(companionCollectible) == true then
         if IsCollectibleBlocked(companionCollectible) then return end
-        zo_callLater(
-            function()                
-                EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED)
-                UseCollectible(companionCollectible)
-            end,
-            collectableCooldownLeft + delay
-        )        
+        zo_callLater(function()
+            EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED)
+            UseCollectible(companionCollectible)
+        end,
+        collectableCooldownLeft + delay
+        )
     end
 end
 
@@ -38,6 +35,23 @@ function BCUI.Binds.SummonCompanionByIndex(id)
         end
 
         BCUI.Binds.SummonCompanion(companion)
+    end
+end
+
+function BCUI.Binds.DismissCompanion(companion,delay)
+    if delay==nil then delay=0 end
+    local companionCollectible = companion.id
+    local collectableCooldownLeft = 0
+    
+    if HasActiveCompanion() then 
+        d(BCUI.Loc("Dismissing")..companion.name)
+        --d(companionCollectible)        
+        zo_callLater(function()
+            EVENT_MANAGER:UnregisterForEvent("BCUI_Event", EVENT_UNIT_DESTROYED)
+            UseCollectible(companionCollectible)
+        end,
+        collectableCooldownLeft + delay
+        )    
     end
 end
 

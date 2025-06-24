@@ -33,6 +33,7 @@ BCUI.Localization.de={
 	CompanionsFrameBtn = "Anzeige sperren",
 	CompanionFontSize = "Schriftgröße",
 	AutoHide = "Automatisches Verstecken",
+	CompanionAutoDismiss = "Lassen Sie das Gefährten frei (Prüfungen).",
 	Companion = "Gefährten",
 	SidebarCompanion = "Seitenleisten-Gefährten",
 
@@ -50,4 +51,5 @@ BCUI.Localization.de={
 	EmberName = "Ember",
 
 	Summoning = "Rufe Gefährten ",
+	Dismissing= "Entlassen Gefährten ",
 }
